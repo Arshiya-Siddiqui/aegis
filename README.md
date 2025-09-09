@@ -19,9 +19,9 @@ That means developers are forced to choose between:
 Aegis is a **plug-and-play runtime shield** for any LLM-powered app.  
 
 Think of it as **an antivirus for AI prompts**:  
-- 🧹 **Sanitizes user inputs** (catches jailbreaks, injections, hidden malicious instructions)  
-- 🔍 **Monitors runtime activity** (detects abnormal requests in real time)  
-- 🚫 **Blocks unsafe actions** before they ever reach the model  
+🧹 **Sanitizes user inputs** (catches jailbreaks, injections, hidden malicious instructions)  
+🔍 **Monitors runtime activity** (detects abnormal requests in real time)  
+🚫 **Blocks unsafe actions** before they ever reach the model  
 
 > 🛡️ With Aegis, devs can focus on building apps, not chasing the latest jailbreak.  
 
@@ -43,9 +43,9 @@ Think of it as **an antivirus for AI prompts**:
 ---
 
 ## 📊 Why It Matters (Impact)  
-- 🌍 **Universal Problem** → Every LLM app is at risk  
-- ⏱️ **Low Integration Cost** → 5-minute setup for devs  
-- 🔒 **User Safety First** → Protects against real-world jailbreaks  
+🌍 **Universal Problem** → Every LLM app is at risk  
+⏱️ **Low Integration Cost** → 5-minute setup for devs  
+🔒 **User Safety First** → Protects against real-world jailbreaks  
 
 ---
 
