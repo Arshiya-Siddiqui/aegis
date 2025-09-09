@@ -25,6 +25,8 @@ Think of it as **an antivirus for AI prompts**:
 
 > 🛡️ With Aegis, devs can focus on building apps, not chasing the latest jailbreak.  
 
+![Project Aegis Flow](project_aegis_flow.png)
+
 ---
 
 ## ✨ Key Features (MVP)  
