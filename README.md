@@ -49,13 +49,6 @@ Think of it as **an antivirus for AI prompts**:
 
 ---
 
-## 🚀 Roadmap  
-- **Day 1-3**: Core Flask app + input sanitizer  
-- **Day 4-6**: Runtime monitoring + logging  
-- **Day 7 (Hackathon Demo)**: Full demo with attack + defense showcase  
-
----
-
 ## 🤝 Join Us  
 We’re building this because **AI safety shouldn’t be an afterthought.**  
 If you believe in safer AI apps, Aegis is for you.  
