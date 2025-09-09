@@ -5,7 +5,7 @@
 ---
 
 ## 🎯 The Problem  
-Large Language Models (LLMs) are powerful — but also vulnerable.  
+Large Language Models (LLMs) are powerful, but also vulnerable.  
 Attackers can trick them with **prompt injections**, **jailbreaks**, and **malicious payloads** that bypass safety filters.  
 
 ⚠️ Right now, there’s **no reliable, lightweight, open-source RASP (Runtime Application Self-Protection) for LLM apps**.  
