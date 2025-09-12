@@ -2,7 +2,7 @@
 
 🚀 **Making AI Safer, One Prompt at a Time**  
 
-![CI](https://github.com/Arshiya-Siddiqui/aegis-llm-rasp/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/Arshiya-Siddiqui/aegis-llm-rasp/actions/workflows/ci.yml/badge.svg)](https://github.com/Arshiya-Siddiqui/aegis-llm-rasp/actions/workflows/ci.yml)
 
 ---
 
