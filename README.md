@@ -74,3 +74,12 @@ pip install -r requirements.txt
 
 # Run app
 python app.py
+
+## Running Tests
+
+We use [pytest](https://docs.pytest.org/) for testing.  
+
+### Run tests locally
+First, activate your virtual environment and install dependencies:  
+```bash
+pip install -r requirements.txt
