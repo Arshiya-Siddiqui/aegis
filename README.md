@@ -1,6 +1,6 @@
 # 🛡️ Aegis: Runtime Application Self-Protection for LLMs 
 
-🚀 **Making AI Safer, One Prompt at a Time**  
+**Making AI Safer, One Prompt at a Time** 🚀
 
 ---
 
@@ -28,13 +28,13 @@ Think of Aegis as an **immune system** for your LLM applications.
 ---
 
 ## ✨ Key Features
-- 🔍 **Hybrid Detection** — combines rule-based heuristics with modern ML classifiers.  
-- 🛑 **Sanitize, Don’t Block** — neutralizes malicious inputs while keeping user flow smooth.  
-- 🔒 **Privacy by Design** — self-hosted container, data never leaves your VPC.  
-- 📜 **Transparent Logging** — every intercepted request and response is recorded for audit and tuning.  
-- ⚡ **Lightweight & Fast** — minimal latency overhead, designed for production use.  
-- 🧩 **Extensible** — add new detection modules and policies easily.  
-- 🔐 **Secure by Default** — CI/CD pipelines with code scanning, dependency checks, and secret detection baked in.  
+- **Hybrid Detection** — combines rule-based heuristics with modern ML classifiers.  
+- **Sanitize, Don’t Block** — neutralizes malicious inputs while keeping user flow smooth.  
+- **Privacy by Design** — self-hosted container, data never leaves your VPC.  
+- **Transparent Logging** — every intercepted request and response is recorded for audit and tuning.  
+- **Lightweight & Fast** — minimal latency overhead, designed for production use.  
+- **Extensible** — add new detection modules and policies easily.  
+- **Secure by Default** — CI/CD pipelines with code scanning, dependency checks, and secret detection baked in.  
 
 ---
 
