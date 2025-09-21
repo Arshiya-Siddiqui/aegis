@@ -1,85 +1,68 @@
-# 🛡️ Project Aegis: RASP for LLM Applications  
+# 🛡️ Aegis: Runtime Application Self-Protection for LLMs 
 
 🚀 **Making AI Safer, One Prompt at a Time**  
 
-[![CI](https://github.com/Arshiya-Siddiqui/aegis-llm-rasp/actions/workflows/ci.yml/badge.svg)](https://github.com/Arshiya-Siddiqui/aegis-llm-rasp/actions/workflows/ci.yml)
+---
+
+## ❌ Problem
+Large Language Models (LLMs) are powerful — but also fragile.  
+- **Prompt Injection & Jailbreaks**: Attackers trick models into ignoring rules and leaking secrets.  
+- **Data Exfiltration Risks**: Sensitive data (PII, API keys, system prompts) can be exposed.  
+- **Enterprise Adoption Barriers**: Healthcare, finance, and regulated industries can’t risk sending unprotected prompts to third-party APIs.  
+- **Poor User Experience**: Existing defenses just block requests, frustrating users and developers alike.  
+
+In short: **LLM apps today are vulnerable, noisy, and hard to secure.**
 
 ---
 
-## 🎯 The Problem  
-Large Language Models (LLMs) are powerful, but also vulnerable.  
-Attackers can trick them with **prompt injections**, **jailbreaks**, and **malicious payloads** that bypass safety filters.  
+## ✅ Solution
+**Aegis** is a **self-hosted Runtime Application Self-Protection (RASP) proxy** for LLMs.  
+- **Intercepts** every prompt and response in real-time.  
+- **Detects threats** with a layered defense pipeline.  
+- **Sanitizes instead of blocking** — neutralizing attacks while preserving UX.  
+- **Logs every event** for audit, analysis, and continuous improvement.  
+- **Privacy-first**: Runs entirely inside your environment (Dockerized). No data leaves your perimeter.  
 
-⚠️ Right now, there’s **no reliable, lightweight, open-source RASP (Runtime Application Self-Protection) for LLM apps**.  
-That means developers are forced to choose between:  
-- Building **fragile custom defenses**, or  
-- **Risking their users’ safety**.  
-
----
-
-## 💡 Our Solution: Aegis  
-Aegis is a **plug-and-play runtime shield** for any LLM-powered app.  
-
-Think of it as **an antivirus for AI prompts**:  
-🧹 **Sanitizes user inputs** (catches jailbreaks, injections, hidden malicious instructions)  
-🔍 **Monitors runtime activity** (detects abnormal requests in real time)  
-🚫 **Blocks unsafe actions** before they ever reach the model  
-
-> 🛡️ With Aegis, devs can focus on building apps, not chasing the latest jailbreak.  
+Think of Aegis as an **immune system** for your LLM applications.  
 
 ---
 
-## ✨ Key Features (MVP)  
-✅ Input Sanitizer – strips out harmful instructions  
-✅ Runtime Monitor – detects & logs attacks  
-✅ Lightweight Middleware – drop it into any Python LLM app  
-✅ Open-Source & Developer Friendly  
+## ✨ Key Features
+- 🔍 **Hybrid Detection** — combines rule-based heuristics with modern ML classifiers.  
+- 🛑 **Sanitize, Don’t Block** — neutralizes malicious inputs while keeping user flow smooth.  
+- 🔒 **Privacy by Design** — self-hosted container, data never leaves your VPC.  
+- 📜 **Transparent Logging** — every intercepted request and response is recorded for audit and tuning.  
+- ⚡ **Lightweight & Fast** — minimal latency overhead, designed for production use.  
+- 🧩 **Extensible** — add new detection modules and policies easily.  
+- 🔐 **Secure by Default** — CI/CD pipelines with code scanning, dependency checks, and secret detection baked in.  
 
 ---
 
-## 🔧 Tech Stack  
-- **Flask** (for demo + easy integration)  
-- **Python** (core sanitizer + monitoring logic)  
-- Future: Plug-ins for FastAPI, LangChain, and cloud deployments  
+## ⚙️ Tech Stack
+Aegis is designed to be:  
+- **Lightweight** — built on modern Python frameworks for performance.  
+- **Portable** — packaged as a Docker container for easy deployment.  
+- **Extensible** — integrates with open-source NLP/ML models for smarter detection.  
+- **Secure by Default** — CI/CD pipelines with automated code scanning, dependency checks, and secret detection.  
+
+*(We keep the detection logic private to preserve security integrity.)*
 
 ---
 
-## 📊 Why It Matters (Impact)  
-🌍 **Universal Problem** → Every LLM app is at risk  
-⏱️ **Low Integration Cost** → 5-minute setup for devs  
-🔒 **User Safety First** → Protects against real-world jailbreaks  
+## 🌍 Why It Matters (Impact)
+- **For Developers**: Plug-and-play security, no need to be a security expert.  
+- **For Enterprises**: A deployable guardrail that enables LLM adoption in regulated industries.  
+- **For Users**: Seamless, safe interactions without “access denied” roadblocks.  
+- **For the Ecosystem**: Moves AI security forward by focusing on **runtime protection**, not just static scans.  
+
+Aegis helps teams **ship AI faster, safer, and with confidence.**
 
 ---
 
-## 🤝 Join Us  
-We’re building this because **AI safety shouldn’t be an afterthought.**  
-If you believe in safer AI apps, Aegis is for you.  
-
----
-
-## 🧪 Quick Start  
-
+## 🚀 Quick Start
 ```bash
-# Clone repo
-git clone https://github.com/Arshiya-Siddiqui/aegis-llm-rasp.git
-cd aegis-llm-rasp
-
-# Setup environment
-python -m venv venv
-source venv/bin/activate   # (Linux/Mac)
-venv\Scripts\activate      # (Windows)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run app
-python app.py
-
-## Running Tests
-
-We use [pytest](https://docs.pytest.org/) for testing.  
-
-### Run tests locally
-First, activate your virtual environment and install dependencies:  
-```bash
-pip install -r requirements.txt
+docker build -t aegis-proxy .
+docker run -p 8080:8080 \
+  -e UPSTREAM_URL=https://api.openai.com/v1/chat/completions \
+  -e UPSTREAM_KEY=$OPENAI_API_KEY \
+  aegis-proxy
