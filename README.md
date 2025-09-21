@@ -59,6 +59,12 @@ Aegis helps teams **ship AI faster, safer, and with confidence.**
 
 ---
 
+## 🤝 Join Us  
+We’re building this because **AI safety shouldn’t be an afterthought.**  
+If you believe in safer AI apps, Aegis is for you.
+
+---
+
 ## 🚀 Quick Start
 ```bash
 docker build -t aegis-proxy .
