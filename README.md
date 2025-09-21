@@ -5,7 +5,7 @@
 ---
 
 ## ❌ Problem
-Large Language Models (LLMs) are powerful — but also fragile.  
+Large Language Models (LLMs) are powerful, but also fragile.  
 - **Prompt Injection & Jailbreaks**: Attackers trick models into ignoring rules and leaking secrets.  
 - **Data Exfiltration Risks**: Sensitive data (PII, API keys, system prompts) can be exposed.  
 - **Enterprise Adoption Barriers**: Healthcare, finance, and regulated industries can’t risk sending unprotected prompts to third-party APIs.  
@@ -19,7 +19,7 @@ In short: **LLM apps today are vulnerable, noisy, and hard to secure.**
 **Aegis** is a **self-hosted Runtime Application Self-Protection (RASP) proxy** for LLMs.  
 - **Intercepts** every prompt and response in real-time.  
 - **Detects threats** with a layered defense pipeline.  
-- **Sanitizes instead of blocking** — neutralizing attacks while preserving UX.  
+- **Sanitizes instead of blocking**, neutralizing attacks while preserving UX.  
 - **Logs every event** for audit, analysis, and continuous improvement.  
 - **Privacy-first**: Runs entirely inside your environment (Dockerized). No data leaves your perimeter.  
 
